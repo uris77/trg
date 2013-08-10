@@ -35,6 +35,16 @@ class UrlMappings {
             action = [GET: "search"]
         }
 
+        "/people/list"{
+            controller = "people"
+            action = [GET: "list"]
+        }
+
+        "/people/search"{
+            controller = "people"
+            action = [GET: "findByStreet"]
+        }
+
 		"/"(view:"/index")
 		"500"(view:'/error')
 	}
