@@ -14,7 +14,7 @@ environments {
     development {
         dataSource {
             //dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc://192.168.0.14:5432/mof"
+            url = "jdbc:postgresql://192.168.0.14:5432/mofdb"
         }
     }
     test {
@@ -26,7 +26,7 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc://192.168.0.14:5432/mof"
+            url = "jdbc:postgresql://192.168.0.14:5432/mofdb"
             pooled = true
             properties {
                maxActive = -1

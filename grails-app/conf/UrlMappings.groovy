@@ -20,6 +20,16 @@ class UrlMappings {
                 DELETE: "delete"]
         }
 
+        "/identification"{
+            controller = "identification"
+            action = [GET: "list"]
+        }
+
+        "/identification/$id"{
+            controller = "identification"
+            action = [GET: "show"]
+        }
+
 		"/"(view:"/index")
 		"500"(view:'/error')
 	}
