@@ -1,3 +1,4 @@
-// Place your Spring DSL code here
+import groovy.sql.Sql
 beans = {
+    sql(Sql, ref('dataSource'))
 }
