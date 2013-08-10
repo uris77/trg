@@ -22,12 +22,17 @@ class UrlMappings {
 
         "/identification"{
             controller = "identification"
-            action = [GET: "list"]
+            action = [GET: "list", POST: "create"]
         }
 
         "/identification/$id"{
             controller = "identification"
             action = [GET: "show"]
+        }
+
+        "/identification/search"{
+            controller = "identification"
+            action = [GET: "search"]
         }
 
 		"/"(view:"/index")
